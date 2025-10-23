@@ -28,7 +28,7 @@ jobs:
         uses: cloudbees-io/configure-ecr-credentials@v1
       - id: build-container
         name: Build container image
-        uses: cloudbees-io/kaniko@v1
+        uses: cloudbees-io/kaniko@v1 
         kind: build
         with:
           destination: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:latest0.1
